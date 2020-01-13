@@ -1,57 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    tools:context=".customview.CustomViewActivity">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:background="#999" />
-
-    <com.qyuan.toolkit.customview.CustomViewGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.qyuan.toolkit.customview.CircleView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@color/colorAccent"
-            android:paddingStart="5dp"
-            android:paddingTop="5dp"
-            android:onClick="showToast"
-            android:paddingBottom="15dp" />
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="#777" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:background="@color/colorAccent"
-            android:text="66" />
+    <com.qyuan.toolkit.customview.taglayout.TagLayout
+        android:layout_width="78dp"
+        android:layout_height="194dp"
+        android:background="@color/colorAccent">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
-            android:text="77" />
+            android:text="555555555555" />
 
-    </com.qyuan.toolkit.customview.CustomViewGroup>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="66666666666666" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:text="88" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测111试" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorAccent"
-        android:text="99" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button测222试" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3333" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4444444444444444" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="555555555555" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="66666666666666" />
+
+    </com.qyuan.toolkit.customview.taglayout.TagLayout>
 </LinearLayout>
