@@ -21,6 +21,8 @@ class TagLayout : ViewGroup {
         defStyle
     )
 
+    private var adapter: TagLayoutAdapter? = null
+
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         val maxWidth = MeasureSpec.getSize(widthMeasureSpec)
         var usedWidth = paddingStart + paddingEnd
@@ -32,6 +34,8 @@ class TagLayout : ViewGroup {
         measureChildren(widthMeasureSpec, heightMeasureSpec)
 
         var childState = 0
+        val childCount = adapter?.getItemCount() ?: 0
+
         for (index in 0 until childCount) {
             val child = getChildAt(index)
             val nextChild: View? = getChildAt(index + 1)
