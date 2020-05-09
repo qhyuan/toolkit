@@ -1,12 +1,14 @@
 package com.qyuan.toolkit.customview.taglayout
 
+import android.view.View
+import android.view.ViewGroup
+
 /**
  * Created by qyuan on 2020-01-13.
  */
-abstract class TagLayoutAdapter {
+interface TagLayoutAdapter {
 
-    abstract fun getItemCount(): Int
+    fun getItemCount(): Int
 
-    abstract fun getView(position: Int)
-
+    fun getView(parent: ViewGroup, position: Int): View
 }

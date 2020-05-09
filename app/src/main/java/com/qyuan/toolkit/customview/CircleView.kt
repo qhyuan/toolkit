@@ -54,6 +54,7 @@ class CircleView : View {
                 getDefaultSize(suggestedMinimumHeight, heightMeasureSpec)
         }
 
+
         val w = resolveSizeAndState(width, widthMeasureSpec, 0)
         val h = resolveSizeAndState(height, heightMeasureSpec, 0)
         setMeasuredDimension(w, h)
@@ -78,10 +79,6 @@ class CircleView : View {
             min(rect.width(), rect.height()) / 2F,
             paint
         )
-    }
-
-    override fun setOnClickListener(l: OnClickListener?) {
-        super.setOnClickListener(l)
     }
 
     companion object {

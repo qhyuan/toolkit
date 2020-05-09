@@ -1,53 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <com.qyuan.toolkit.customview.taglayout.TagLayout
-        android:layout_width="78dp"
-        android:layout_height="194dp"
-        android:background="@color/colorAccent">
+        android:id="@+id/tag_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9E604949"
+        app:itemSpace="10dp"
+        app:maxTagLines="-1" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="555555555555" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="66666666666666" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="测111试" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button测222试" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3333" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4444444444444444" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="555555555555" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="66666666666666" />
-
-    </com.qyuan.toolkit.customview.taglayout.TagLayout>
+    <com.qyuan.toolkit.customview.DashBoardView
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
 </LinearLayout>
