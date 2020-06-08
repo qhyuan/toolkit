@@ -17,4 +17,11 @@
         android:layout_height="wrap_content"
         android:onClick="openEventDispatch"
         android:text="Event Dispatch" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openTextActivity"
+        android:text="Test Code Entry"
+        />
 </LinearLayout>

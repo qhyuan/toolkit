@@ -24,6 +24,10 @@ class MainActivity : AppCompatActivity() {
         openActivity(EventDispatchActivity::class.java)
     }
 
+    fun openTextActivity(view: View) {
+        openActivity(TestCodeActivity::class.java)
+    }
+
     private fun openActivity(activityClass: Class<out Activity>) {
         val intent = Intent(this, activityClass)
         startActivity(intent)

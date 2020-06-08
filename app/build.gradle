@@ -3,12 +3,16 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.qyuan.toolkit'
 
 ext {
     rxAndroidVersion = '2.1.1'
     rxJavaVersion = '2.0.8'
     rxKotlinVersion = '2.2.0'
 }
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
 
 android {
     compileSdkVersion 28
@@ -31,7 +35,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.core:core-ktx:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'

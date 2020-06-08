@@ -1,9 +1,7 @@
 package com.qyuan.toolkit.customview
 
 import android.content.Context
-import android.graphics.Canvas
-import android.graphics.Paint
-import android.graphics.PathEffect
+import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
 import androidx.core.content.ContextCompat
@@ -23,16 +21,24 @@ class DashBoardView : View {
         defStyle
     )
 
-    private val paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+    private val pathMeasure = PathMeasure()
+
+    private val arcPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
         color = ContextCompat.getColor(context, R.color.colorPrimary)
         style = Paint.Style.STROKE
-        strokeCap = Paint.Cap.ROUND
+        strokeCap = Paint.Cap.SQUARE
         strokeWidth = 6F
-        pathEffect = PathEffect()
+    }
+    private val dashPath = Path()
+
+    private val dashPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+        color = ContextCompat.getColor(context, R.color.colorPrimary)
+        style = Paint.Style.STROKE
+        strokeCap = Paint.Cap.SQUARE
+        strokeWidth = 6F
     }
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        canvas.drawArc(0F, 0F, width.toFloat(), height.toFloat(), 180F, 180F, false, paint)
     }
 }
