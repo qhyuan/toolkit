@@ -8,7 +8,6 @@ import android.graphics.Rect
 import android.util.AttributeSet
 import android.util.Log
 import android.view.View
-import android.view.ViewGroup
 import kotlin.math.max
 import kotlin.math.min
 
@@ -53,7 +52,6 @@ class CircleView : View {
             else ->
                 getDefaultSize(suggestedMinimumHeight, heightMeasureSpec)
         }
-
 
         val w = resolveSizeAndState(width, widthMeasureSpec, 0)
         val h = resolveSizeAndState(height, heightMeasureSpec, 0)

@@ -3,7 +3,6 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'com.qyuan.toolkit'
 
 ext {
     rxAndroidVersion = '2.1.1'
@@ -11,12 +10,15 @@ ext {
     rxKotlinVersion = '2.2.0'
 }
 
-sourceCompatibility = "1.8"
-targetCompatibility = "1.8"
-
 android {
     compileSdkVersion 28
-    buildToolsVersion "28.0.2"
+    buildToolsVersion "28.0.3"
+
+    compileOptions {
+        sourceCompatibility = "1.8"
+        targetCompatibility = "1.8"
+    }
+
     defaultConfig {
         applicationId "com.qyuan.toolkit"
         minSdkVersion 21
